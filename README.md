@@ -19,11 +19,11 @@ All public endpoints are accessible under the base URL:
 
 Below are practical examples using curl. Replace IDs and URLs as needed.
 
-### Site service 
+### Site Service 
 
 ![Site service](images/service-site.png)
 
-- Add a site
+#### Add a site
 
 ```bash
 curl -s -X POST \
@@ -41,7 +41,7 @@ Response:
 }
 ```
 
-- List all sites
+#### List all sites
 
 ```bash
 curl -s https://staging-uptime-monitor-vbvi.encr.app/site
@@ -58,7 +58,7 @@ Response:
 }
 ```
 
-- Get a site by ID
+#### Get a site by ID
 
 ```bash
 curl -s https://staging-uptime-monitor-vbvi.encr.app/site/1
@@ -70,7 +70,7 @@ Response:
 { "id": 1, "url": "https://example.com" }
 ```
 
-- Delete a site by ID
+#### Delete a site by ID
 
 ```bash
 curl -s -X DELETE https://staging-uptime-monitor-vbvi.encr.app/site/1
@@ -78,13 +78,13 @@ curl -s -X DELETE https://staging-uptime-monitor-vbvi.encr.app/site/1
 
 Status 200 indicates success (empty body).
 
-### Monitor service 
+### Monitor Service 
 
 
 ![Monitor service](images/service-monitor.png)
 
 
-- Ping a URL on-demand
+#### Ping a URL on-demand
 
 You can pass a bare hostname (scheme is optional; defaults to https).
 
@@ -98,10 +98,7 @@ Response:
 { "up": true }
 ```
 
-Tip: If you want to include a scheme explicitly, URL-encode it:
-`/ping/https:%2F%2Fexample.com`.
-
-- Check a single monitored site by ID (records a check and publishes transition if state changed)
+#### Check a single monitored site by ID
 
 ```bash
 curl -s -X POST https://staging-uptime-monitor-vbvi.encr.app/check/1
@@ -117,7 +114,7 @@ curl -s -X POST https://staging-uptime-monitor-vbvi.encr.app/checkall
 
 Status 200 indicates success (empty body).
 
-- Get current status for all sites (latest check per site)
+#### Get current status for all sites
 
 ```bash
 curl -s https://staging-uptime-monitor-vbvi.encr.app/status

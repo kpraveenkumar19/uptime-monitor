@@ -2,7 +2,7 @@
 
 An uptime monitoring service that tthat continuously monitors the uptime of a list of websites.When it detects a website is down, it posts a Slack message notifying that the website is down, and another message when the website is back up again.
 
-### Architecture
+## Architecture
 
 ![Flow](images/flow.png)
 
@@ -19,7 +19,9 @@ All public endpoints are accessible under the base URL:
 
 Below are practical examples using curl. Replace IDs and URLs as needed.
 
-### Site service (manage monitored sites)
+### Site service 
+
+![Site service](images/service-site.png)
 
 - Add a site
 
@@ -76,9 +78,11 @@ curl -s -X DELETE https://staging-uptime-monitor-vbvi.encr.app/site/1
 
 Status 200 indicates success (empty body).
 
-![Site service](images/service-site.png)
+### Monitor service 
 
-### Monitor service (ping/check/status)
+
+![Monitor service](images/service-monitor.png)
+
 
 - Ping a URL on-demand
 
@@ -129,8 +133,6 @@ Response:
   }
 }
 ```
-
-![Monitor service](images/service-monitor.png)
 
 ### Slack notifications (private integration)
 

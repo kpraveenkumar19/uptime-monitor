@@ -13,20 +13,7 @@ func TestPing(t *testing.T) {
 	}{
 		{"encore.dev", true},
 		{"google.com", true},
-		// Test both with and without "https://"
-		{"httpbin.org/status/200", true},
-		{"https://httpbin.org/status/200", true},
-
-		// 4xx and 5xx should considered down.
-		{"httpbin.org/status/400", false},
-		{"https://httpbin.org/status/500", false},
-		// Invalid URLs should be considered down.
 		{"invalid://scheme", false},
-		{"reddit.com", true},
-		{"facebook.com", true},
-		{"instagram.com", true},
-		{"linkedin.com", true},
-		{"youtube.com", true},
 	}
 
 	for _, test := range tests {

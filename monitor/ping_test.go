@@ -22,6 +22,16 @@ func TestPing(t *testing.T) {
 		{"https://httpbin.org/status/500", false},
 		// Invalid URLs should be considered down.
 		{"invalid://scheme", false},
+		{"reddit.com", true},
+		{"twitter.com", true},
+		{"facebook.com", true},
+		{"instagram.com", true},
+		{"linkedin.com", true},
+		{"youtube.com", true},
+		{"wikipedia.org", true},
+		{"amazon.com", true},
+		{"apple.com", true},
+		{"microsoft.com", true},
 	}
 
 	for _, test := range tests {

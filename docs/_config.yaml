@@ -1,2 +1,3 @@
 theme: jekyll-theme-cayman
-description: Monitors website uptime and and sends real-time slack alerts
+title: Uptime Monitor
+description: Monitors website uptime and sends real-time Slack alerts when sites go down and come back online.

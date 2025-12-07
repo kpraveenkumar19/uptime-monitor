@@ -3,7 +3,7 @@
   Uptime Monitor
 </h1>
 
-An uptime monitoring service that that continuously monitors the uptime of a list of websites. When it detects a website is down, it posts a Slack message notifying that the website is down, and another message when the website is back up again.
+An uptime monitoring service that continuously monitors the uptime of a list of websites. When it detects a website is down, it posts a Slack message notifying that the website is down, and another message when the website is back up again.
 
 ## Table of Contents
 

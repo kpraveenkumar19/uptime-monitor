@@ -7,12 +7,12 @@ An uptime monitoring service that continuously monitors the uptime of a list of 
 
 ## Table of Contents
 
-- [Architecture](#architecture)
-- [Usage](#usage)
-  - [Site Service](#site-service)
-  - [Monitor Service](#monitor-service)
-  - [Slack notifications](#slack-notifications-private-integration)
-- [Contributing](#contributing)
+- <a href="#architecture" target="_blank">Architecture</a>
+- <a href="#usage" target="_blank">Usage</a>
+  - <a href="#site-service" target="_blank">Site Service</a>
+  - <a href="#monitor-service" target="_blank">Monitor Service</a>
+  - <a href="#slack-notifications-private-integration" target="_blank">Slack notifications</a>
+- <a href="#contributing" target="_blank">Contributing</a>
 
 ## Architecture
 
@@ -27,7 +27,7 @@ The architecture consists of:
 
 All public endpoints are accessible under the base URL:
 
-`https://staging-uptime-monitor-vbvi.encr.app`
+<a href="https://staging-uptime-monitor-vbvi.encr.app" target="_blank">https://staging-uptime-monitor-vbvi.encr.app</a>
 
 Below are practical examples using curl. Replace IDs and URLs as needed.
 

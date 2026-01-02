@@ -7,12 +7,12 @@ An uptime monitoring service that continuously monitors the uptime of a list of 
 
 ## Table of Contents
 
-- <a href="#architecture" target="_blank">Architecture</a>
-- <a href="#usage" target="_blank">Usage</a>
-  - <a href="#site-service" target="_blank">Site Service</a>
-  - <a href="#monitor-service" target="_blank">Monitor Service</a>
-  - <a href="#slack-notifications-private-integration" target="_blank">Slack notifications</a>
-- <a href="#contributing" target="_blank">Contributing</a>
+- <a href="#architecture">Architecture</a>
+- <a href="#usage">Usage</a>
+  - <a href="#site-service">Site Service</a>
+  - <a href="#monitor-service">Monitor Service</a>
+  - <a href="#slack-notifications-private-integration">Slack notifications</a>
+- <a href="#contributing">Contributing</a>
 
 ## Architecture
 
